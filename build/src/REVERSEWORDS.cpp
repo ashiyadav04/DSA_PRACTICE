@@ -3,7 +3,8 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-int main(){
+int main()
+{
     string s;
     getline(cin,s);
     cout<<s<<endl;
@@ -18,26 +19,27 @@ int main(){
         }
     
    
-        if (!temp.empty()) {
+        if (!temp.empty()) 
+        {
             word.push_back(temp);
             temp = "";
         }
-}
-reverse(word.begin(),word.end());
-string ans=" ";
-for(int i=0;i<word.size();i++)
-{
-   // if(!ans.empty())
+    }
+    reverse(word.begin(),word.end());
+    string ans=" ";
+    for(int i=0;i<word.size();i++)
+    {
+     // if(!ans.empty())
     {
         ans+=" ";
         ans+=word[i];
     }
-}
+    }
 
-for(auto c:ans)
-{
-    cout<<c;
-}
-return 0;
+    for(auto c:ans)
+    {
+       cout<<c;
+    }
+    return 0;
 
 }

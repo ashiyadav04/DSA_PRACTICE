@@ -2,7 +2,7 @@
 using namespace std;
 
 char toloweer(char a)
-{
+{ 
     char temp=a-'A'+'a';
     return temp;
 }
